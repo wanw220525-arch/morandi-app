@@ -1,0 +1,43 @@
+{
+  "name": "morandi-life-planner-app",
+  "version": "2.3.0-ios-https",
+  "description": "静谧生活 Morandi AI 生活规划助手 — Capacitor 原生 App 版",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "DEEPSEEK_API_KEY=your_key_here node server.js",
+    "build:native": "node scripts/build-native.js",
+    "native:sync": "npm run build:native && npx cap sync",
+    "native:android": "npm run build:native && npx cap add android && npx cap open android",
+    "native:ios": "npm run build:native && npx cap add ios && npx cap open ios",
+    "test:native": "node --check server.js && node --check src/router.js && npm run build:native && npx cap sync",
+    "start:https": "MORANDI_HTTPS=1 node server.js",
+    "ios:sync": "npm run build:native && npx cap sync ios",
+    "ios:open": "npm run ios:sync && npx cap open ios",
+    "ios:simulator": "npm run ios:sync && echo \"用 Xcode 打开 ios/App/App.xcworkspace 后选择 iPhone Simulator 运行（模拟器无需 Apple 设备签名）\"",
+    "test:ios-package": "node --check server.js && node --check src/router.js && npm run build:native && npx cap sync ios"
+  },
+  "keywords": [
+    "life-planner",
+    "morandi",
+    "deepseek",
+    "pwa",
+    "capacitor",
+    "native-app",
+    "android",
+    "ios"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0"
+  }
+}

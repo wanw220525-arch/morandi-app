@@ -1,0 +1,5 @@
+{
+  "builtAt": "2026-05-10T12:07:46.989Z",
+  "mode": "capacitor-native",
+  "note": "AI 对话在原生 App 中默认读取 window.MORANDI_AI_PROXY_URL 或 localStorage.morandi_ai_proxy_url。请使用 HTTPS 后端代理，不要把 DeepSeek Key 写进前端。"
+}

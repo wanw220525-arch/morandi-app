@@ -1,0 +1,30 @@
+{
+  "appId": "com.morandi.lifeplanner",
+  "appName": "静谧生活",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#F4F2E5",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#F4F2E5",
+      "overlaysWebView": false
+    }
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "scheme": "MorandiLifePlanner"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}

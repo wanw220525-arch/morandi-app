@@ -1,0 +1,26 @@
+{
+  "name": "静谧生活 AI 规划器",
+  "short_name": "静谧生活",
+  "description": "Morandi 风格 AI 生活规划助手，管理日程、清单与收支",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F4F2E5",
+  "theme_color": "#9CAF88",
+  "orientation": "portrait",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./"
+}
